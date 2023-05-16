@@ -1,0 +1,61 @@
+@charset "utf-8";
+.container {
+  width: 960px;
+  margin: 0 auto;
+  height: 80px;
+}
+.navi {
+  width: 960px;
+  height: 60px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+}
+.navi ul {
+  list-style: none;
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.navi ul li {
+  float: left;
+  padding: 10px;
+  width: 150px;
+}
+/* 메뉴hover 설정법 */
+.navi a:link,
+.navi a:visited {
+  display: block;
+  font-size: 14px;
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+  /* background-color: aquamarine; */
+}
+/* focus하면 클릭시 남아있음 */
+.navi a:hover,
+.navi a:focus {
+  background-color: #9f55ca;
+  color: aliceblue;
+}
+.navi a:active {
+  background-color: rgb(62, 11, 75);
+}
+
+.contents {
+  width: 400px;
+  background-color: rgb(243, 223, 255);
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 20px;
+  border: 1px solid #222;
+}
+/* target설정 */
+#intro:target {
+  background-color: #ae67ff;
+}
+#room:target {
+  background-color: #844cc4;
+}
+#reservation:target {
+  background-color: #65378a;
+}
